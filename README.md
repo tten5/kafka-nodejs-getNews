@@ -3,7 +3,7 @@ Practice using kafka by making app getting news from newsapi and display it on c
 
 newsAPI: https://newsapi.org/ 
 
-please use your own API_KEY 
+please use your own API_KEY, it is free 
 
 # How to use
 - First run the docker compose to start the kafka in background: ``./cmd.sh start``
