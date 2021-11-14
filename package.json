@@ -1,0 +1,18 @@
+{
+  "name": "kafka-nodejs-getting-started",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module", 
+  "dependencies": {
+    "avsc": "^5.7.3",
+    "node-rdkafka": "^2.11.0"
+  },
+  "scripts": {
+    "start:producer": "node ./producer/index.js",
+    "start:consumer": "node ./consumer/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
