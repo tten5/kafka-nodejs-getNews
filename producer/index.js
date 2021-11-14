@@ -1,6 +1,6 @@
 console.log("Producer is running..")
-import Kafka from 'node-rdkafka'
-import eventType from '../eventType.js'
+const Kafka = require('node-rdkafka')
+const eventType = require('../eventType.js')
 
 const stream = Kafka.Producer.createWriteStream(
     // define broker, localhost:9092 is one broker 

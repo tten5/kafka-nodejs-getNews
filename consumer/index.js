@@ -1,6 +1,6 @@
 console.log("Consumer is running..")
-import Kafka from 'node-rdkafka'
-import eventType from '../eventType.js'
+const Kafka = require('node-rdkafka')
+const eventType = require('../eventType.js')
 
 const consumer = Kafka.KafkaConsumer(
     { 

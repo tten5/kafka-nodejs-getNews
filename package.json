@@ -2,8 +2,7 @@
   "name": "kafka-nodejs-getting-started",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
-  "type": "module", 
+  "main": "index.js", 
   "dependencies": {
     "avsc": "^5.7.3",
     "node-rdkafka": "^2.11.0"

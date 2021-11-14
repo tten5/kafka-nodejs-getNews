@@ -1,6 +1,6 @@
-import avro from 'avsc';
+const avro = require('avsc')
 
-export default avro.Type.forSchema({
+module.exports = avro.Type.forSchema({
   type: 'record',
   fields: [
     {
