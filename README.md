@@ -1,5 +1,6 @@
 # kafka-nodejs-getNews
 Practice using kafka by making app getting news from newsapi and display it on consumer
+
 newsAPI: https://newsapi.org/ 
 
 # How to use
