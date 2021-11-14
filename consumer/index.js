@@ -17,6 +17,12 @@ consumer.on('ready', () => {
     consumer.subscribe(['test']) // an array of topic
     consumer.consume()
 }).on('data', (data) => {
-   // anytime new data comes in
-    console.log(`Received message: ${eventType.fromBuffer(data.value)}`)
+    // anytime new data comes in
+    const news = eventType.newsType.fromBuffer(data.value)
+    console.log(`Received news: \n
+    Title: ${news.title} 
+    Description: ${news.description} 
+    Url: ${news.url} 
+    Published At: ${news.publishedAt}`)
+    console.log("=======================")
 })

@@ -1,10 +1,11 @@
 {
-  "name": "kafka-nodejs-getting-started",
+  "name": "kafka-nodejs-getnews",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js", 
+  "main": "index.js",
   "dependencies": {
     "avsc": "^5.7.3",
+    "dotenv": "^10.0.0",
+    "newsapi": "^2.4.1",
     "node-rdkafka": "^2.11.0"
   },
   "scripts": {
@@ -13,5 +14,14 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tten5/kafka-nodejs-getNews.git"
+  },
+  "bugs": {
+    "url": "https://github.com/tten5/kafka-nodejs-getNews/issues"
+  },
+  "homepage": "https://github.com/tten5/kafka-nodejs-getNews#readme",
+  "description": ""
 }

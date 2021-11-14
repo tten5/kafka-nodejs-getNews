@@ -1,14 +1,22 @@
 const avro = require('avsc')
 
-module.exports = avro.Type.forSchema({
+module.exports.newsType = avro.Type.forSchema({
   type: 'record',
   fields: [
     {
-      name: 'category',
-      type: { type: 'enum', symbols: ['DOG', 'CAT'] }
+      name: 'title',
+      type: 'string',
     },
     {
-      name: 'noise',
+      name: 'description',
+      type: 'string',
+    },
+    {
+      name: 'url',
+      type: 'string',
+    },
+    {
+      name: 'publishedAt',
       type: 'string',
     }
   ]
