@@ -36,7 +36,7 @@ please use your own API_KEY, it is free to register new one
 - Write message to broker 
 ``/cmd.sh writeMessage `` 
 
-**Used packages:**
-- node-rdkafka:  Node.js wrapper for Kafka C/C++ library 
-- avsc: pure js implementation of the Avro (serialize service) --> in order to write object into stream and consume oject from stream
-
+**Used packages: (Updated 220311) **
+- ~~node-rdkafka:  Node.js wrapper for Kafka C/C++ library 
+- ~~avsc: pure js implementation of the Avro (serialize service) --> in order to write object into stream and consume oject from stream
+- kafkajs (use JSON to stringify instead of using binary with Avro, eventhough Avro is better but take more to implement) 
