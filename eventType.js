@@ -21,3 +21,4 @@ module.exports.newsType = avro.Type.forSchema({
     }
   ]
 });
+

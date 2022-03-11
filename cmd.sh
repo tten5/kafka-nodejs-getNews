@@ -17,6 +17,15 @@ createTopic() {
     --topic test
 }
 
+createTopic2() {
+    docker exec -it kafka /opt/bitnami/kafka/bin/kafka-topics.sh \
+    --create \
+    --bootstrap-server localhost:9092 \
+    --replication-factor 1 \
+    --partitions 1 \
+    --topic videoNoti
+}
+
 describe() {
     docker exec -it kafka /opt/bitnami/kafka/bin/kafka-topics.sh \
     --describe \
@@ -52,6 +61,11 @@ case $CMD in
     "createTopic")
         echo "Creating topic..."
         createTopic
+    ;;
+
+    "createTopic2")
+        echo "Creating topic2..."
+        createTopic2
     ;;
 
     "describe")
