@@ -11,8 +11,12 @@ please use your own API_KEY, it is free to register new one
 - Docker 
 
 # How to use
-- First run the docker compose to start the kafka in background: ``./cmd.sh start``
-- Then createTopic to create topic ``test``: ``./cmd.sh createTopic``
+- First run the docker compose to start the kafka in background
+`./cmd.sh start`
+
+- Then createTopic to create topic `test`
+`./cmd.sh createTopic`
+
 - Open 2 terminals, one for producer and one for consumer. 
 
 - On producer terminal: 
@@ -26,6 +30,12 @@ please use your own API_KEY, it is free to register new one
 
 - Describe the current topics 
 ``/cmd.sh describe `` 
+
+- Delete topic `test` 
+`/cmd.sh deleteTopic `
+
+- List all topic
+`/cmd.sh listTopics `
 
 - Stop 
 ``/cmd.sh stop``
