@@ -14,7 +14,22 @@ createTopic() {
     --bootstrap-server localhost:9092 \
     --replication-factor 1 \
     --partitions 1 \
-    --topic test
+    --topic test --if-not-exists
+    echo "Done creating topic 'test'"
+}
+
+deleteTopic() {
+    docker exec -it kafka /opt/bitnami/kafka/bin/kafka-topics.sh \
+    --bootstrap-server localhost:9092 \
+    --delete \
+    --topic test 
+    echo "Done deleting topic 'test'"
+}
+
+listTopics() {
+    docker exec -it kafka /opt/bitnami/kafka/bin/kafka-topics.sh \
+    --bootstrap-server localhost:9092 \
+    --list
 }
 
 describe() {
@@ -50,12 +65,23 @@ case $CMD in
     ;;
 
     "createTopic")
-        echo "Creating topic..."
+        echo "Creating topic 'test'..."
         createTopic
     ;;
 
+    "deleteTopic")
+        echo "Deleting topic 'test'..."
+        deleteTopic
+    ;;
+
+    "listTopics")
+        echo "List all topics..."
+        listTopics
+    ;;
+
+
     "describe")
-        echo "Describing topic..."
+        echo "Describing topic 'test'..."
         describe
     ;;
 
