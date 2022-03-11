@@ -12,39 +12,58 @@ please use your own API_KEY, it is free to register new one
 
 # How to use
 - First run the docker compose to start the kafka in background
-`./cmd.sh start`
+```
+./cmd.sh start
+```
 
 - Then createTopic to create topic `test`
-`./cmd.sh createTopic`
+```
+./cmd.sh createTopic
+```
 
 - Open 2 terminals, one for producer and one for consumer. 
 
 - On producer terminal: 
-``npm run start:producer``
+```
+npm run start:producer
+```
 
 - On consumer terminal: 
-``npm run start:consumer``
-
+```
+npm run start:consumer
+```
 
 **Other commands**
 
 - Describe the current topics 
-``/cmd.sh describe `` 
+```
+/cmd.sh describe 
+```
 
 - Delete topic `test` 
-`/cmd.sh deleteTopic `
+```
+/cmd.sh deleteTopic
+```
 
 - List all topic
-`/cmd.sh listTopics `
+```
+/cmd.sh listTopics 
+```
 
 - Stop 
-``/cmd.sh stop``
+```
+/cmd.sh stop
+```
 
 - Read all messages in broker 
-``/cmd.sh readMessage `` 
+```
+/cmd.sh readMessage `
+``` 
 
 - Write message to broker 
-``/cmd.sh writeMessage `` 
+```
+/cmd.sh writeMessage 
+```
 
 **Used packages: (Updated 220311)**
 - ~~node-rdkafka:  Node.js wrapper for Kafka C/C++ library~~ 
